@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đoàn Thị Bích Ngọc</title>
+    <link rel="stylesheet" href="./css//style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div
+            class="text-3xl font-bold"
+            style="
+              background: linear-gradient(135deg, #667eea, #764ba2);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            BN ✨
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a class="nav-link" onclick="scrollToSection('home')"
+              >🏠 Trang Chủ</a
+            >
+            <a class="nav-link" onclick="scrollToSection('about')"
+              >💫 Về Mình</a
+            >
+            <a class="nav-link" onclick="scrollToSection('school')"
+              >📚 Học Tập</a
+            >
+            <a class="nav-link" onclick="scrollToSection('hobbies')"
+              >🎨 Sở Thích</a
+            >
+            <a class="nav-link" onclick="scrollToSection('dreams')"
+              >🌟 Ước Mơ</a
+            >
+            <a class="nav-link" onclick="scrollToSection('contact')"
+              >💌 Liên Hệ</a
+            >
+          </div>
+          <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+          <a class="block py-2 nav-link" onclick="scrollToSection('home')"
+            >🏠 Trang Chủ</a
+          >
+          <a class="block py-2 nav-link" onclick="scrollToSection('about')"
+            >💫 Về Mình</a
+          >
+          <a class="block py-2 nav-link" onclick="scrollToSection('school')"
+            >📚 Học Tập</a
+          >
+          <a class="block py-2 nav-link" onclick="scrollToSection('hobbies')"
+            >🎨 Sở Thích</a
+          >
+          <a class="block py-2 nav-link" onclick="scrollToSection('dreams')"
+            >🌟 Ước Mơ</a
+          >
+          <a class="block py-2 nav-link" onclick="scrollToSection('contact')"
+            >💌 Liên Hệ</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+
+      <div class="container mx-auto px-6 z-10 relative">
+        <div class="flex flex-col items-center justify-center gap-8">
+          <div class="profile-container">
+            <div class="profile-image">BN</div>
+          </div>
+          <div class="text-center">
+            <h1 class="name-title mb-4">Bích Ngọc</h1>
+            <p class="subtitle text-3xl text-white mb-3 font-bold">
+              ✨ Học sinh THPT ✨
+            </p>
+            <p class="subtitle text-xl text-white/90 mb-8">
+              Mơ ước bay cao như những vì sao 🌟
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+              <button class="btn-cute" onclick="scrollToSection('about')">
+                <span> Khám Phá Thêm</span>
+              </button>
+              <button
+                class="btn-cute"
+                style="
+                  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                "
+                onclick="scrollToSection('contact')"
+              >
+                <span>💌 Kết Nối</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="relative"
+      style="background: linear-gradient(180deg, #f8f9ff 0%, #e0e7ff 100%)"
+    >
+      <div class="sticker">🌸</div>
+      <div class="sticker">🎀</div>
+      <div class="sticker">⭐</div>
+
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="section-title">💫 Về Mình Nè</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="glass-card">
+            <div class="emoji-icon mb-4">👧</div>
+            <h3 class="text-2xl font-bold text-purple-600 mb-4">
+              Xin Chào! 👋
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4 text-lg">
+              Mình là <strong>Đoàn Thị Bích Ngọc</strong>, một nữ sinh lớp 11
+              năng động và yêu đời! Mình thích khám phá những điều mới mẻ và
+              luôn cố gắng hết mình trong mọi việc 💪
+            </p>
+            <p class="text-gray-700 leading-relaxed text-lg">
+              Cuộc sống của mình đầy màu sắc với học tập, bạn bè và những ước mơ
+              lớn lao! 🌈
+            </p>
+          </div>
+          <div class="glass-card">
+            <div class="emoji-icon mb-4">📝</div>
+            <h3 class="text-2xl font-bold text-purple-600 mb-4">Thông Tin</h3>
+            <div class="space-y-4 text-lg">
+              <div class="flex items-center gap-3">
+                <span class="text-3xl">🎂</span>
+                <span><strong>Tuổi:</strong> 16 tuổi</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-3xl">🏫</span>
+                <span><strong>Trường:</strong> THPT ABC</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-3xl">📚</span>
+                <span><strong>Lớp:</strong> 11G</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-3xl">📍</span>
+                <span><strong>Quê quán:</strong> Hải Dương</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-3xl">💝</span>
+                <span><strong>Tính cách:</strong> Vui vẻ, hòa đồng</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- School Section -->
+    <section
+      id="school"
+      style="background: linear-gradient(180deg, #e0e7ff 0%, #f8f9ff 100%)"
+    >
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="section-title">📚 Cuộc Sống Học Đường</h2>
+        <div class="glass-card mb-8">
+          <div class="text-center mb-6">
+            <div class="emoji-icon">🏆</div>
+            <h3 class="text-2xl font-bold text-purple-600 mt-4 mb-6">
+              Thành Tích Nổi Bật
+            </h3>
+            <div class="flex flex-wrap justify-center gap-3">
+              <span class="achievement-badge">🥇 Học sinh giỏi</span>
+              <span class="achievement-badge">🎨 Giải nhất hay ăn</span>
+              <span class="achievement-badge">⚡ Hoạt động tích cực</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="glass-card">
+            <h3 class="text-2xl font-bold text-purple-600 mb-6">
+              📖 Môn Học Yêu Thích
+            </h3>
+            <div class="space-y-4">
+              <div class="subject-item">
+                <span class="text-3xl">📐</span>
+                <div>
+                  <h4 class="font-bold text-lg">Toán Học</h4>
+                  <p class="text-gray-600">Yêu thích giải các bài toán logic</p>
+                </div>
+              </div>
+              <div class="subject-item">
+                <span class="text-3xl">🖋️</span>
+                <div>
+                  <h4 class="font-bold text-lg">Ngữ Văn</h4>
+                  <p class="text-gray-600">Đam mê viết văn và đọc sách</p>
+                </div>
+              </div>
+              <div class="subject-item">
+                <span class="text-3xl">🌍</span>
+                <div>
+                  <h4 class="font-bold text-lg">Tiếng Anh</h4>
+                  <p class="text-gray-600">Mong muốn giao tiếp tốt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h3 class="text-2xl font-bold text-purple-600 mb-6">
+              🎯 Hoạt Động Ngoại Khóa
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="timeline-dot mt-1"></div>
+                <div>
+                  <h4 class="font-bold text-lg">🎭 CLB Văn Nghệ</h4>
+                  <p class="text-gray-600">
+                    Tham gia biểu diễn trong các sự kiện trường
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="timeline-dot mt-1"></div>
+                <div>
+                  <h4 class="font-bold text-lg">📰 Ban Truyền Thông</h4>
+                  <p class="text-gray-600">
+                    Viết bài và thiết kế poster cho trường
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="timeline-dot mt-1"></div>
+                <div>
+                  <h4 class="font-bold text-lg">🤝 Tình Nguyện</h4>
+                  <p class="text-gray-600">
+                    Tham gia các hoạt động thiện nguyện
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section
+      id="hobbies"
+      style="background: linear-gradient(180deg, #f8f9ff 0%, #e0e7ff 100%)"
+    >
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="section-title">🎨 Sở Thích Của Mình</h2>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="hobby-card">
+            <div class="text-6xl mb-3">📚</div>
+            <h4 class="font-bold text-lg mb-2">Đọc Sách</h4>
+            <p class="text-gray-600 text-sm">Tiểu thuyết & truyện teen</p>
+          </div>
+          <div class="hobby-card">
+            <div class="text-6xl mb-3">🎵</div>
+            <h4 class="font-bold text-lg mb-2">Nghe Nhạc</h4>
+            <p class="text-gray-600 text-sm">Kpop & nhạc trẻ</p>
+          </div>
+          <div class="hobby-card">
+            <div class="text-6xl mb-3">✏️</div>
+            <h4 class="font-bold text-lg mb-2">Vẽ Vời</h4>
+            <p class="text-gray-600 text-sm">Vẽ tranh & doodle</p>
+          </div>
+          <div class="hobby-card">
+            <div class="text-6xl mb-3">📸</div>
+            <h4 class="font-bold text-lg mb-2">Chụp Ảnh</h4>
+            <p class="text-gray-600 text-sm">Lưu giữ kỷ niệm đẹp</p>
+          </div>
+          <div class="hobby-card">
+            <div class="text-6xl mb-3">🎬</div>
+            <h4 class="font-bold text-lg mb-2">Xem Phim</h4>
+            <p class="text-gray-600 text-sm">Phim hoạt hình & drama</p>
+          </div>
+          <div class="hobby-card">
+            <div class="text-6xl mb-3">🍰</div>
+            <h4 class="font-bold text-lg mb-2">Nấu Ăn</h4>
+            <p class="text-gray-600 text-sm">Làm bánh & món ngon</p>
+          </div>
+          <div class="hobby-card">
+            <div class="text-6xl mb-3">✈️</div>
+            <h4 class="font-bold text-lg mb-2">Du Lịch</h4>
+            <p class="text-gray-600 text-sm">Khám phá nơi mới</p>
+          </div>
+          <div class="hobby-card">
+            <div class="text-6xl mb-3">👭</div>
+            <h4 class="font-bold text-lg mb-2">Gặp Bạn Bè</h4>
+            <p class="text-gray-600 text-sm">Tụ tập & vui chơi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dreams Section -->
+    <section
+      id="dreams"
+      style="background: linear-gradient(180deg, #e0e7ff 0%, #f8f9ff 100%)"
+    >
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="section-title">🌟 Ước Mơ & Tương Lai</h2>
+        <div class="glass-card text-center">
+          <div class="emoji-icon mb-6">💭</div>
+          <h3 class="text-2xl font-bold text-purple-600 mb-6">
+            Những Ước Mơ Của Mình
+          </h3>
+          <div class="flex flex-wrap justify-center gap-4 mb-8">
+            <div class="dream-bubble">🎓 Đỗ đại học mơ ước</div>
+            <div class="dream-bubble">✈️ Du lịch vòng quanh thế giới</div>
+            <div class="dream-bubble">💼 Có công việc ổn định</div>
+            <div class="dream-bubble">👨‍👩‍👧 Làm cha mẹ tự hào</div>
+            <div class="dream-bubble">💝 Giúp đỡ người khác</div>
+            <div class="dream-bubble">📚 Học thêm nhiều điều mới</div>
+          </div>
+
+          <div
+            class="bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl p-6 mt-6"
+          >
+            <h4 class="text-xl font-bold text-purple-600 mb-4">
+              🎯 Mục Tiêu Ngắn Hạn
+            </h4>
+            <div class="grid md:grid-cols-3 gap-4 text-left">
+              <div class="bg-white rounded-xl p-4">
+                <div class="text-2xl mb-2">📖</div>
+                <p class="font-semibold">Học tốt kỳ thi THPT</p>
+              </div>
+              <div class="bg-white rounded-xl p-4">
+                <div class="text-2xl mb-2">🏆</div>
+                <p class="font-semibold">Giành học bổng du học</p>
+              </div>
+              <div class="bg-white rounded-xl p-4">
+                <div class="text-2xl mb-2">🌟</div>
+                <p class="font-semibold">Phát triển kỹ năng mềm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      style="background: linear-gradient(180deg, #f8f9ff 0%, #667eea 100%)"
+    >
+      <div class="max-w-4xl mx-auto px-6">
+        <h2
+          class="section-title"
+          style="color: white; -webkit-text-fill-color: white"
+        >
+          💌 Kết Nối Với Mình
+        </h2>
+        <div class="glass-card">
+          <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div class="text-center">
+              <div class="contact-icon mx-auto mb-4">📧</div>
+              <h4 class="font-bold text-lg mb-2">Email</h4>
+              <p class="text-gray-600">bichngoc@gmail.com</p>
+            </div>
+            <div class="text-center">
+              <div class="contact-icon mx-auto mb-4">📱</div>
+              <h4 class="font-bold text-lg mb-2">Điện Thoại</h4>
+              <p class="text-gray-600">0123 456 789</p>
+            </div>
+            <div class="text-center">
+              <div class="contact-icon mx-auto mb-4">💬</div>
+              <h4 class="font-bold text-lg mb-2">Social Media</h4>
+              <p class="text-gray-600">@bichngoc</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 mb-8"
+          >
+            <h3 class="text-2xl font-bold text-purple-700 mb-6 text-center">
+              🎉 Gửi Lời Nhắn Cho Mình Nhé!
+            </h3>
+
+            <form class="space-y-5" onsubmit="handleSubmit(event)">
+              <!-- Tên & Email -->
+              <div class="grid md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="😊 Tên của bạn"
+                  required
+                  class="w-full p-3 rounded-xl border border-purple-200 focus:border-purple-400 focus:ring-2 focus:ring-purple-300 outline-none transition"
+                />
+                <input
+                  type="email"
+                  placeholder="📧 Email của bạn"
+                  required
+                  class="w-full p-3 rounded-xl border border-purple-200 focus:border-purple-400 focus:ring-2 focus:ring-purple-300 outline-none transition"
+                />
+              </div>
+
+              <!-- Tiêu đề -->
+              <input
+                type="text"
+                placeholder="✨ Tiêu đề"
+                required
+                class="w-full p-3 rounded-xl border border-purple-200 focus:border-purple-400 focus:ring-2 focus:ring-purple-300 outline-none transition"
+              />
+
+              <!-- Nội dung -->
+              <textarea
+                placeholder="💭 Nội dung tin nhắn..."
+                rows="5"
+                required
+                class="w-full p-3 rounded-xl border border-purple-200 focus:border-purple-400 focus:ring-2 focus:ring-purple-300 outline-none transition resize-none"
+              ></textarea>
+
+              <!-- Nút gửi -->
+              <button
+                type="submit"
+                class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-3 rounded-xl shadow-lg hover:scale-[1.02] hover:shadow-xl active:scale-95 transition duration-200"
+              >
+                💌 Gửi Tin Nhắn
+              </button>
+            </form>
+          </div>
+
+          <div class="text-center">
+            <p class="text-gray-600 mb-4">🌈 Theo dõi mình tại:</p>
+            <div class="flex justify-center gap-4 flex-wrap">
+              <a
+                href="#"
+                class="btn-cute"
+                style="
+                  background: linear-gradient(135deg, #3b5998, #8b9dc3);
+                  padding: 10px 20px;
+                "
+              >
+                <span>Facebook</span>
+              </a>
+              <a
+                href="#"
+                class="btn-cute"
+                style="
+                  background: linear-gradient(135deg, #e1306c, #fd1d1d);
+                  padding: 10px 20px;
+                "
+              >
+                <span>Instagram</span>
+              </a>
+              <a
+                href="#"
+                class="btn-cute"
+                style="
+                  background: linear-gradient(135deg, #ff0000, #ff6b6b);
+                  padding: 10px 20px;
+                "
+              >
+                <span>TikTok</span>
+              </a>
+              <a
+                href="#"
+                class="btn-cute"
+                style="
+                  background: linear-gradient(135deg, #0088cc, #00bcd4);
+                  padding: 10px 20px;
+                "
+              >
+                <span>Zalo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-r from-purple-900 to-pink-900 text-white py-10"
+    >
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <div class="text-6xl mb-4 animate-bounce">✨</div>
+        <h3 class="text-2xl font-bold mb-2">Đoàn Thị Bích Ngọc</h3>
+        <p class="text-lg mb-6">
+          Luôn cố gắng để trở thành phiên bản tốt nhất của chính mình 💪
+        </p>
+        <div class="flex justify-center gap-6 mb-6 text-3xl">
+          <a href="#" class="hover:scale-125 transition transform">🌸</a>
+          <a href="#" class="hover:scale-125 transition transform">🌟</a>
+          <a href="#" class="hover:scale-125 transition transform">💝</a>
+          <a href="#" class="hover:scale-125 transition transform">🎀</a>
+          <a href="#" class="hover:scale-125 transition transform">✨</a>
+        </div>
+        <p class="text-sm opacity-80">© 2025 Bích Ngọc. Made with 💜 and ✨</p>
+      </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
